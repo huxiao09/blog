@@ -6,18 +6,18 @@
     <description>Recent content on HuXiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 05 May 2022 00:18:15 +0800</lastBuildDate><atom:link href="https://huxiao09.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://huxiao09.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Life</title>
-      <link>https://huxiao09.github.io/blog/posts/life/life/</link>
-      <pubDate>Thu, 05 May 2022 00:18:15 +0800</pubDate>
+      <title>建站第一篇</title>
+      <link>https://huxiao09.github.io/blog/posts/life/2022_10_19/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://huxiao09.github.io/blog/posts/life/life/</guid>
-      <description></description>
+      <guid>https://huxiao09.github.io/blog/posts/life/2022_10_19/</guid>
+      <description>建站原因 其实我一直以来都有写一系列博客记录自己科研学习和生活的想法，但是由于过去种种忙碌，这个想法一直没有付诸于行动。但是最近自己遭遇了一些</description>
     </item>
     
     <item>
-      <title>Tech</title>
+      <title>TRPO</title>
       <link>https://huxiao09.github.io/blog/posts/tech/tech/</link>
       <pubDate>Thu, 05 May 2022 00:17:58 +0800</pubDate>
       
@@ -35,12 +35,12 @@
     </item>
     
     <item>
-      <title>🙋🏻‍♂️关于</title>
+      <title>🙋🏻‍♂️关于我</title>
       <link>https://huxiao09.github.io/blog/about/</link>
       <pubDate>Sat, 06 Nov 2021 14:57:28 +0800</pubDate>
       
       <guid>https://huxiao09.github.io/blog/about/</guid>
-      <description>关于我 英文名: Kevin Xu 职业: 程序员 运动: 跑步、乒乓球、爬山</description>
+      <description>个人简历：链接</description>
     </item>
     
     
