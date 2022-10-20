@@ -138,8 +138,8 @@ var _hmt = _hmt || [];
   "keywords": [
     ""
   ],
-  "articleBody": "Simulation Budget Allocation for Further Enhancing the Efficiency of Ordinal Optimization OCBA最出名的一篇文章\n文章概述 为了用尽量少的计算量得到尽可能高的对齐概率（挑选出最有可能是真实性能最好的design），提出了OCBA分配规则\n主要内容 Intro 在序优化的基础上发展的，个人认为OCBA能结合进序优化的部分是在序优化中crude model挑选最好的s个design和在selected set中用detailed model挑选最优的design的时候； 计算量分配有意义应该有一个前提，就是在模型中评估某个design的性能会受到噪声影响，导致每次评估不一样 Intuitive上来讲，为了挑选一个好的design，更多的计算量应该分配给那些能够帮助我们识别出好的design的那些designs，即应该分配给那些更能帮助我们减少估计方差的designs，一些不重要的、不能帮助我们识别出好的design的那些designs就不要给太多计算量 Method 对于DEDS，主要的优化问题是： $$ \\min {\\theta_i \\in \\Theta} J\\left(\\theta_i\\right) \\equiv E\\left[L\\left(\\theta_i, \\xi\\right)\\right] $$ 最常见的肯定是用均值估计期望，即$\\bar{J}i \\equiv \\frac{1}{N_i} \\sum{j=1}^{N_i} L\\left(\\theta_i, \\xi{i j}\\right)$，这里$N_i$就是分配给$\\theta_i$的计算量，但这种估计误差的收敛速度不会快于$O(1/\\sqrt N)$。假设$L(,)$是正态分布的。\n对齐概率：$P{CS}=P{\\bar{J}最小的b实际上J_b就是最小的}$。我们想做的是用尽可能少的计算量达到尽可能高的对其概率： $$ \\begin{array}{rl} \\max {N_1, \\ldots, N_k} \u0026 P{C S} \\ \\text { s.t. } \u0026 N_1+N_2+\\cdots+N_k=T,,N_i \\in N, i=1, \\ldots, k \\end{array} $$ 采用贝叶斯模型，把对齐概率写成后验分布的形式： $$ P{CS}=P\\left{J\\left(\\theta_b\\right)",
-  "wordCount" : "1777",
+  "articleBody": "Simulation Budget Allocation for Further Enhancing the Efficiency of Ordinal Optimization OCBA最出名的一篇文章。\n文章概述 为了用尽量少的计算量得到尽可能高的对齐概率（挑选出最有可能是真实性能最好的design），提出了OCBA分配规则。\n主要内容 Intro 在序优化的基础上发展的，个人认为OCBA能结合进序优化的部分是在序优化中crude model挑选最好的s个design和在selected set中用detailed model挑选最优的design的时候 计算量分配有意义应该有一个前提，就是在模型中评估某个design的性能会受到噪声影响，导致每次评估不一样 Intuitive上来讲，为了挑选一个好的design，更多的计算量应该分配给那些能够帮助我们识别出好的design的那些designs，即应该分配给那些更能帮助我们减少估计方差的designs，一些不重要的、不能帮助我们识别出好的design的那些designs就不要给太多计算量 Method 对于DEDS，主要的优化问题是：\n$$\\min _{\\theta_i \\in \\Theta} J\\left(\\theta_i\\right) \\equiv E\\left[L\\left(\\theta_i, \\xi\\right)\\right]$$\n最常见的肯定是用均值估计期望，即$\\bar{J}_i \\equiv \\frac{1}{N_i} \\sum_{j=1}^{N_i} L\\left(\\theta_i, \\xi_{i j}\\right)$，这里$N_i$就是分配给$\\theta_i$的计算量，但这种估计误差的收敛速度不会快于$O(1/\\sqrt N)$。假设$L(,)$是正态分布的。\n对齐概率：$P{CS}=P{\\bar{J}最小的b实际上J_b就是最小的}$。我们想做的是用尽可能少的计算量达到尽可能高的对其概率：\n$$\\begin{array}{rl} \\max _{N_1, \\ldots, N_k} \u0026 P{C S} \\ \\text { s.t. } \u0026 N_1+N_2+\\cdots+N_k=T,,N_i \\in N, i=1, \\ldots, k \\end{array}$$\n采用贝叶斯模型，把对齐概率写成后验分布的形式： $$ P{CS}=P{J\\left(\\theta_b\\right)",
+  "wordCount" : "1761",
   "inLanguage": "en",
   "datePublished": "2022-10-20T00:00:00Z",
   "dateModified": "2022-10-20T00:00:00Z",
@@ -252,7 +252,7 @@ var _hmt = _hmt || [];
             <div class="post-description">
                 Simulation Budget Allocation for Further Enhancing the Efficiency of Ordinal Optimization
             </div>
-            <div class="post-meta">创建:&nbsp;<span title='2022-10-20 00:00:00 +0000 UTC'>2022-10-20</span>&nbsp;|&nbsp;更新:&nbsp;2022-10-20&nbsp;|&nbsp;字数:&nbsp;1777字&nbsp;|&nbsp;时长:&nbsp;4分钟&nbsp;|&nbsp;
+            <div class="post-meta">创建:&nbsp;<span title='2022-10-20 00:00:00 +0000 UTC'>2022-10-20</span>&nbsp;|&nbsp;更新:&nbsp;2022-10-20&nbsp;|&nbsp;字数:&nbsp;1761字&nbsp;|&nbsp;时长:&nbsp;4分钟&nbsp;|&nbsp;
 作者:&nbsp;Hu Xiao
 
 
@@ -363,50 +363,38 @@ var _hmt = _hmt || [];
 </script>
         
         <div class="post-content"><h1 id="simulation-budget-allocation-for-further-enhancing-the-efficiency-of-ordinal-optimization">Simulation Budget Allocation for Further Enhancing the Efficiency of Ordinal Optimization<a hidden class="anchor" aria-hidden="true" href="#simulation-budget-allocation-for-further-enhancing-the-efficiency-of-ordinal-optimization">#</a></h1>
-<p>OCBA最出名的一篇文章</p>
+<p>OCBA最出名的一篇文章。</p>
 <h1 id="文章概述">文章概述<a hidden class="anchor" aria-hidden="true" href="#文章概述">#</a></h1>
-<p>为了用尽量少的计算量得到尽可能高的对齐概率（挑选出最有可能是真实性能最好的design），提出了OCBA分配规则</p>
+<p>为了用尽量少的计算量得到尽可能高的对齐概率（挑选出最有可能是真实性能最好的design），提出了OCBA分配规则。</p>
 <h1 id="主要内容">主要内容<a hidden class="anchor" aria-hidden="true" href="#主要内容">#</a></h1>
 <h3 id="intro">Intro<a hidden class="anchor" aria-hidden="true" href="#intro">#</a></h3>
 <ul>
-<li>在序优化的基础上发展的，个人认为OCBA能结合进序优化的部分是在序优化中crude model挑选最好的s个design和在selected set中用detailed model挑选最优的design的时候；</li>
+<li>在序优化的基础上发展的，个人认为OCBA能结合进序优化的部分是在序优化中crude model挑选最好的s个design和在selected set中用detailed model挑选最优的design的时候</li>
 <li>计算量分配有意义应该有一个前提，就是在模型中评估某个design的性能会受到噪声影响，导致每次评估不一样</li>
 <li>Intuitive上来讲，为了挑选一个好的design，更多的计算量应该分配给那些能够帮助我们识别出好的design的那些designs，即应该分配给那些更能帮助我们减少估计方差的designs，一些不重要的、不能帮助我们识别出好的design的那些designs就不要给太多计算量</li>
 </ul>
 <h3 id="method">Method<a hidden class="anchor" aria-hidden="true" href="#method">#</a></h3>
-<p>对于DEDS，主要的优化问题是：
-$$
-\min <em>{\theta_i \in \Theta} J\left(\theta_i\right) \equiv E\left[L\left(\theta_i, \xi\right)\right]
-$$
-最常见的肯定是用均值估计期望，即$\bar{J}<em>i \equiv \frac{1}{N_i} \sum</em>{j=1}^{N_i} L\left(\theta_i, \xi</em>{i j}\right)$，这里$N_i$就是分配给$\theta_i$的计算量，但这种估计误差的收敛速度不会快于$O(1/\sqrt N)$。假设$L(,)$是正态分布的。</p>
-<p>对齐概率：$P{CS}=P{\bar{J}最小的b实际上J_b就是最小的}$。我们想做的是用尽可能少的计算量达到尽可能高的对其概率：
-$$
-\begin{array}{rl}
-\max <em>{N_1, \ldots, N_k} &amp; P{C S} \
+<p>对于DEDS，主要的优化问题是：</p>
+<p>$$\min _{\theta_i \in \Theta} J\left(\theta_i\right) \equiv E\left[L\left(\theta_i, \xi\right)\right]$$</p>
+<p>最常见的肯定是用均值估计期望，即$\bar{J}_i \equiv \frac{1}{N_i} \sum_{j=1}^{N_i} L\left(\theta_i, \xi_{i j}\right)$，这里$N_i$就是分配给$\theta_i$的计算量，但这种估计误差的收敛速度不会快于$O(1/\sqrt N)$。假设$L(,)$是正态分布的。</p>
+<p>对齐概率：$P{CS}=P{\bar{J}最小的b实际上J_b就是最小的}$。我们想做的是用尽可能少的计算量达到尽可能高的对其概率：</p>
+<p>$$\begin{array}{rl}
+\max _{N_1, \ldots, N_k} &amp; P{C S} \
 \text { s.t. } &amp; N_1+N_2+\cdots+N_k=T,,N_i \in N, i=1, \ldots, k
-\end{array}
+\end{array}$$</p>
+<p>采用贝叶斯模型，把对齐概率写成后验分布的形式：
 $$
-采用贝叶斯模型，把对齐概率写成后验分布的形式：
+P{CS}=P{J\left(\theta_b\right)&lt;J\left(\theta_i\right), i \neq b \mid L\left(\theta_i, \xi_{i j}\right), j=1, \ldots, N_i, i=1,2, \ldots, k}=P{\tilde{J}_b&lt;\tilde{J}_i,i \neq b}
 $$
-P{CS}=P\left{J\left(\theta_b\right)&lt;J\left(\theta_i\right), i \neq b | L\left(\theta_i, \xi</em>{i j}\right), j=1, \ldots, N_i, i=1,2, \ldots, k\right}=P{\tilde{J}_b&lt;\tilde{J}_i,i \neq b}
+从贝叶斯学派的角度，对$J(\theta_i)$取正态先验，则其后验分布也即也是正态分布：$\tilde{J}_i \sim N\left(\bar{J}_i, \frac{\sigma_i^2}{N_i}\right)$，后验正态分布的均值和方差都能通过样本估计，则PCS可以通过蒙特卡洛仿真的方式算出来，但是蒙特卡洛太耗时，所以用Bonferroni不等式把原max问题的目标函数放小，这样相当于是最大化原目标函数的下界：</p>
+<p>$$P{C S}=P{\bigcap_{i=1, i \neq b}^k\left(\tilde{J}_b-\tilde{J}_i&lt;0\right)} \geq 1-\sum_{i=1, i \neq b}^k\left[1-P{\tilde{J}_b-\tilde{J}_i&lt;0}\right]=1-\sum_{i=1, i \neq b}^k P{\tilde{J}_b&gt;\tilde{J}_i}=APCS$$</p>
+<p>这样原问题就变成了（注意其实不是等价的变换）：</p>
+<p>$$\begin{array}{rl}
+\max _{N_1, \ldots, N_k} APCS \quad \text { s.t. } N_1+N_2+\cdots+N_k=T,,N_i \in N, i=1, \ldots, k
+\end{array}$$</p>
+<p>接下来，把$N_i$放成连续实数，经过变量代换可以写出来拉格朗日函数：
 $$
-从贝叶斯学派的角度，对$J(\theta_i)$取正态先验，则其后验分布也即也是正态分布：$\tilde{J}_i \sim N\left(\bar{J}<em>i, \frac{\sigma_i^2}{N_i}\right)$，后验正态分布的均值和方差都能通过样本估计，则PCS可以通过蒙特卡洛仿真的方式算出来，但是蒙特卡洛太耗时，所以用Bonferroni不等式把原max问题的目标函数放小，这样相当于是最大化原目标函数的下界：
-$$
-\begin{aligned}
-P{C S} &amp;=P\left{\bigcap</em>{i=1, i \neq b}^k\left(\tilde{J}<em>b-\tilde{J}<em>i&lt;0\right)\right} \geq 1-\sum</em>{i=1, i \neq b}^k\left[1-P\left{\tilde{J}<em>b-\tilde{J}<em>i&lt;0\right}\right] \
-&amp;=1-\sum</em>{i=1, i \neq b}^k P\left{\tilde{J}<em>b&gt;\tilde{J}<em>i\right}=A P C S
-\end{aligned}
-$$
-这样原问题就变成了（注意其实不是等价的变换）：
-$$
-\begin{array}{rl}
-\max <em>{N_1, \ldots, N_k} &amp; APCS \
-\text { s.t. } &amp; N_1+N_2+\cdots+N_k=T,,N_i \in N, i=1, \ldots, k
-\end{array}
-$$
-接下来，把$N_i$放成连续实数，经过变量代换可以写出来拉格朗日函数：
-$$
-F=1-\sum</em>{\substack{i=1 \ i \neq b}}^k \int</em>{-\frac{\delta</em>{b, i}}{\sigma</em>{b, i}}}^{\infty} \frac{1}{\sqrt{2 \pi}} e^{\frac{t^2}{2}} d t-\lambda\left(\sum</em>{i=1}^k N_i-T\right)
+F=1-\sum_{\substack{i=1 \ i \neq b}}^k \int_{-\frac{\delta_{b, i}}{\sigma_{b, i}}}^{\infty} \frac{1}{\sqrt{2 \pi}} e^{\frac{t^2}{2}} d t-\lambda\left(\sum_{i=1}^k N_i-T\right)
 $$
 然后写KKT条件（还好都是变量不是泛函，所以写的比较清晰，注意这里的$\sigma$和$\delta$都是视为和$N_i,N_b$无关的）。我们其实是想找到$N_i,N_j,N_b$之间的关系，经过一系列的近似（$N_b&raquo;N_i,T\rightarrow \infty$）和推导可以得到下面这个定理：</p>
 <img src="https://s2.loli.net/2022/10/20/r1FcNzHQ6EfvoLl.png" alt="1666280503660.png" style="zoom:50%;" />
@@ -438,7 +426,7 @@ $$
   <a class="next" href="https://huxiao09.github.io/blog/posts/paper/%E5%88%B6%E5%86%B7%E4%BC%98%E5%8C%96-1/">
     <span class="title">下一页 »</span>
     <br>
-    <span>【制冷优化 1】</span>
+    <span>【制冷优化 1】 Optimizing Industrial HVAC Systems with Hierarchical Reinforcement Learning</span>
   </a>
 </nav>
 
