@@ -28,6 +28,7 @@
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 ></script>
 
+
 <title>【运筹优化 1】 OCBA | HuXiao&#39;s Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="Simulation Budget Allocation for Further Enhancing the Efficiency of Ordinal Optimization">
@@ -138,8 +139,8 @@ var _hmt = _hmt || [];
   "keywords": [
     ""
   ],
-  "articleBody": "Simulation Budget Allocation for Further Enhancing the Efficiency of Ordinal Optimization OCBA最出名的一篇文章。\n文章概述 为了用尽量少的计算量得到尽可能高的对齐概率（挑选出最有可能是真实性能最好的design），提出了OCBA分配规则。\n主要内容 Intro 在序优化的基础上发展的，个人认为OCBA能结合进序优化的部分是在序优化中crude model挑选最好的s个design和在selected set中用detailed model挑选最优的design的时候 计算量分配有意义应该有一个前提，就是在模型中评估某个design的性能会受到噪声影响，导致每次评估不一样 Intuitive上来讲，为了挑选一个好的design，更多的计算量应该分配给那些能够帮助我们识别出好的design的那些designs，即应该分配给那些更能帮助我们减少估计方差的designs，一些不重要的、不能帮助我们识别出好的design的那些designs就不要给太多计算量 Method 对于DEDS，主要的优化问题是：\n$$\\min _{\\theta_i \\in \\Theta} J\\left(\\theta_i\\right) \\equiv E\\left[L\\left(\\theta_i, \\xi\\right)\\right]$$\n最常见的肯定是用均值估计期望，即$\\bar{J}_i \\equiv \\frac{1}{N_i} \\sum_{j=1}^{N_i} L\\left(\\theta_i, \\xi_{i j}\\right)$，这里$N_i$就是分配给$\\theta_i$的计算量，但这种估计误差的收敛速度不会快于$O(1/\\sqrt N)$。假设$L(,)$是正态分布的。\n对齐概率：$P{CS}=P{\\bar{J}最小的b实际上J_b就是最小的}$。我们想做的是用尽可能少的计算量达到尽可能高的对其概率：\n$$\\begin{array}{rl} \\max _{N_1, \\ldots, N_k} \u0026 P{C S} \\ \\text { s.t. } \u0026 N_1+N_2+\\cdots+N_k=T,,N_i \\in N, i=1, \\ldots, k \\end{array}$$\n采用贝叶斯模型，把对齐概率写成后验分布的形式： $$ P{CS}=P{J\\left(\\theta_b\\right)",
-  "wordCount" : "1761",
+  "articleBody": "Simulation Budget Allocation for Further Enhancing the Efficiency of Ordinal Optimization OCBA最出名的一篇文章。\n文章概述 为了用尽量少的计算量得到尽可能高的对齐概率（挑选出最有可能是真实性能最好的design），提出了OCBA分配规则。\n主要内容 Intro 在序优化的基础上发展的，个人认为OCBA能结合进序优化的部分是在序优化中crude model挑选最好的s个design和在selected set中用detailed model挑选最优的design的时候 计算量分配有意义应该有一个前提，就是在模型中评估某个design的性能会受到噪声影响，导致每次评估不一样 Intuitive上来讲，为了挑选一个好的design，更多的计算量应该分配给那些能够帮助我们识别出好的design的那些designs，即应该分配给那些更能帮助我们减少估计方差的designs，一些不重要的、不能帮助我们识别出好的design的那些designs就不要给太多计算量 Method 对于DEDS，主要的优化问题是：\n$$\\min _{\\theta_i \\in \\Theta} J\\left(\\theta_i\\right) \\equiv E\\left[L\\left(\\theta_i, \\xi\\right)\\right]$$\n最常见的肯定是用均值估计期望，即$\\bar{J}_i \\equiv \\frac{1}{N_i} \\sum_{j=1}^{N_i} L\\left(\\theta_i, \\xi_{i j}\\right)$，这里$N_i$就是分配给$\\theta_i$的计算量，但这种估计误差的收敛速度不会快于$O(1/\\sqrt N)$。假设$L(,)$是正态分布的。\n对齐概率：$P\\{CS\\}=P\\{\\bar{J}最小的b实际上J_b就是最小的\\}$。我们想做的是用尽可能少的计算量达到尽可能高的对其概率：\n$$\\begin{array}{rl} \\max _{N_1, \\ldots, N_k} \u0026 P\\{C S\\} \\ \\text { s.t. } \u0026 N_1+N_2+\\cdots+N_k=T,,N_i \\in N, i=1, \\ldots, k \\end{array}$$\n采用贝叶斯模型，把对齐概率写成后验分布的形式： $$ P\\{CS\\}=P\\{J\\left(\\theta_b\\right)",
+  "wordCount" : "1765",
   "inLanguage": "en",
   "datePublished": "2022-10-20T00:00:00Z",
   "dateModified": "2022-10-20T00:00:00Z",
@@ -252,7 +253,7 @@ var _hmt = _hmt || [];
             <div class="post-description">
                 Simulation Budget Allocation for Further Enhancing the Efficiency of Ordinal Optimization
             </div>
-            <div class="post-meta">创建:&nbsp;<span title='2022-10-20 00:00:00 +0000 UTC'>2022-10-20</span>&nbsp;|&nbsp;更新:&nbsp;2022-10-20&nbsp;|&nbsp;字数:&nbsp;1761字&nbsp;|&nbsp;时长:&nbsp;4分钟&nbsp;|&nbsp;
+            <div class="post-meta">创建:&nbsp;<span title='2022-10-20 00:00:00 +0000 UTC'>2022-10-20</span>&nbsp;|&nbsp;更新:&nbsp;2022-10-20&nbsp;|&nbsp;字数:&nbsp;1765字&nbsp;|&nbsp;时长:&nbsp;4分钟&nbsp;|&nbsp;
 作者:&nbsp;Hu Xiao
 
 
@@ -377,17 +378,17 @@ var _hmt = _hmt || [];
 <p>对于DEDS，主要的优化问题是：</p>
 <p>$$\min _{\theta_i \in \Theta} J\left(\theta_i\right) \equiv E\left[L\left(\theta_i, \xi\right)\right]$$</p>
 <p>最常见的肯定是用均值估计期望，即$\bar{J}_i \equiv \frac{1}{N_i} \sum_{j=1}^{N_i} L\left(\theta_i, \xi_{i j}\right)$，这里$N_i$就是分配给$\theta_i$的计算量，但这种估计误差的收敛速度不会快于$O(1/\sqrt N)$。假设$L(,)$是正态分布的。</p>
-<p>对齐概率：$P{CS}=P{\bar{J}最小的b实际上J_b就是最小的}$。我们想做的是用尽可能少的计算量达到尽可能高的对其概率：</p>
+<p>对齐概率：$P\{CS\}=P\{\bar{J}最小的b实际上J_b就是最小的\}$。我们想做的是用尽可能少的计算量达到尽可能高的对其概率：</p>
 <p>$$\begin{array}{rl}
-\max _{N_1, \ldots, N_k} &amp; P{C S} \
+\max _{N_1, \ldots, N_k} &amp; P\{C S\} \
 \text { s.t. } &amp; N_1+N_2+\cdots+N_k=T,,N_i \in N, i=1, \ldots, k
 \end{array}$$</p>
 <p>采用贝叶斯模型，把对齐概率写成后验分布的形式：
 $$
-P{CS}=P{J\left(\theta_b\right)&lt;J\left(\theta_i\right), i \neq b \mid L\left(\theta_i, \xi_{i j}\right), j=1, \ldots, N_i, i=1,2, \ldots, k}=P{\tilde{J}_b&lt;\tilde{J}_i,i \neq b}
+P\{CS\}=P\{J\left(\theta_b\right)&lt;J\left(\theta_i\right), i \neq b \mid L\left(\theta_i, \xi_{i j}\right), j=1, \ldots, N_i, i=1,2, \ldots, k\}=P\{\tilde{J}_b&lt;\tilde{J}_i,i \neq b\}
 $$
 从贝叶斯学派的角度，对$J(\theta_i)$取正态先验，则其后验分布也即也是正态分布：$\tilde{J}_i \sim N\left(\bar{J}_i, \frac{\sigma_i^2}{N_i}\right)$，后验正态分布的均值和方差都能通过样本估计，则PCS可以通过蒙特卡洛仿真的方式算出来，但是蒙特卡洛太耗时，所以用Bonferroni不等式把原max问题的目标函数放小，这样相当于是最大化原目标函数的下界：</p>
-<p>$$P{C S}=P{\bigcap_{i=1, i \neq b}^k\left(\tilde{J}_b-\tilde{J}_i&lt;0\right)} \geq 1-\sum_{i=1, i \neq b}^k\left[1-P{\tilde{J}_b-\tilde{J}_i&lt;0}\right]=1-\sum_{i=1, i \neq b}^k P{\tilde{J}_b&gt;\tilde{J}_i}=APCS$$</p>
+<p>$$P{C S}=P\{\bigcap_{i=1, i \neq b}^k\left(\tilde{J}_b-\tilde{J}_i&lt;0\right)\} \geq 1-\sum_{i=1, i \neq b}^k\left[1-P\{\tilde{J}_b-\tilde{J}_i&lt;0\}\right]=1-\sum_{i=1, i \neq b}^k P\{\tilde{J}_b&gt;\tilde{J}_i\}=APCS$$</p>
 <p>这样原问题就变成了（注意其实不是等价的变换）：</p>
 <p>$$\begin{array}{rl}
 \max _{N_1, \ldots, N_k} APCS \quad \text { s.t. } N_1+N_2+\cdots+N_k=T,,N_i \in N, i=1, \ldots, k
